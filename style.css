@@ -1,0 +1,16 @@
+.grey {
+    border: solid grey 5px;
+    border-radius: 7px;
+}
+
+.win {
+    border: solid green 5px;
+}
+
+.lose {
+    border: solid red 5px;
+}
+
+.draw {
+    border: solid orange 5px;
+}

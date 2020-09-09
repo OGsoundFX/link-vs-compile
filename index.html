@@ -15,9 +15,12 @@
     <div class="container" ng-controller="ScoreController as score">
         <h4> {{ score.test }} </h4>
         <button class="btn btn-danger" ng-click="score.scoreCalculation();">Check the score</button>
+        <div display-result class="grey" result="{{ score.result }}">
+           <h4> {{ score.message }} </h4>
+        </div>
     </div>
-
     <script src="js/app.js"></script>
     <script src="js/score-controller.js"></script>
+    <script src="js/directive.js"></script>
 </body>
 </html>
