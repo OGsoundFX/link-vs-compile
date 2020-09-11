@@ -14,7 +14,7 @@ function ScoreController () {
             this.message = `France Wins! ${France} - ${Argentine}`;
             this.result = "win";
         } else if (France < Argentine) {
-            this.message = `France Loses! ${France} - ${Argentine};`
+            this.message = `France Loses! ${France} - ${Argentine}`;
             this.result = "lose";
         } else {
             this.message = `It's a draw! ${France} - ${Argentine}`;

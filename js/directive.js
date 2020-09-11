@@ -7,9 +7,19 @@ function displayResult () {
         // }
 
         // When I click on the button it doesn't change the attrs
+        // link: function ($scope, $element, $attrs) {
+        //     console.log($attrs.result.length);
+        //     $element.addClass($attrs.result);
+        // }
+
+        // the $observe directive 
         link: function ($scope, $element, $attrs) {
-            console.log($attrs.result.length);
-            $element.addClass($attrs.result);
+            $attrs.$observe('result', (value) => {
+                $element.removeClass("rwin")
+                $element.removeClass("lose")
+                $element.removeClass("draw")
+                $element.addClass(value);
+            });
         }
     };
 };
